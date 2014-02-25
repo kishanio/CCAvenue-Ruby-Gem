@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Kishan Thobhani"]
   spec.email         = ["thobhanikishan@gmail.com"]
   spec.description   = %q{CCAvenue Payment Gateway.}
-  spec.summary       = %q{Encryption & Decryption in core ruby itself. Request data, Response parsing}
+  spec.summary       = %q{Encryption & Decryption in core ruby itself. Request data, Response}
   spec.homepage      = ""
   spec.license       = "MIT"
 
