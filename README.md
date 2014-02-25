@@ -7,12 +7,20 @@ CCAvenue integration Ruby.
 
 [http://kishanio.github.io/CCAvenue-Ruby-Gem/](http://kishanio.github.io/CCAvenue-Ruby-Gem/)
 
+####Download####
+
+Rubygems.org: [https://rubygems.org/gems/ccavenue](https://rubygems.org/gems/ccavenue)
+
 ####Dependency: ####
 
 None
 
 ####Usage:####
 
+**_Raw Installation:_**
+
+    gem install ccavenue
+    
 **_Rails:_**
 
 **GEMFILE**
