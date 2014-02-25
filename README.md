@@ -5,12 +5,11 @@ CCAvenue integration Ruby.
 
 ####Demo & Other resources: ####
 
+[http://kishanio.github.io/CCAvenue-Ruby-Gem/](http://kishanio.github.io/CCAvenue-Ruby-Gem/)
 
 ####Dependency: ####
 
 None
-
-Encryption & Decryption are implemented in core Ruby itself.
 
 ####Usage:####
 
@@ -22,7 +21,7 @@ Encryption & Decryption are implemented in core Ruby itself.
 
 **application_controller.rb**
     
-    # Create an instace with merchantid, workingkey and redirect url as parameter
+    # Create an instance with merchantid, workingkey and redirect url as parameter
     def ccavenue
         return @ccavenue = Ccavenue::Payment.new(<TODO: MERCHANT ID>,<TODO: MERCHANT WORKING KEY>,<TODO: REDIRECT URL>)
     end
@@ -84,7 +83,7 @@ Encryption & Decryption are implemented in core Ruby itself.
         document.getElementById("redirect").submit();   
     </script>
     
-**payment confirmation page post payment**
+**CCAvenue Response Redirect Page**
     
     def payment_confirm   # Method post 
     

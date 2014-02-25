@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["thobhanikishan@gmail.com"]
   spec.description   = %q{CCAvenue Payment Gateway.}
   spec.summary       = %q{Encryption & Decryption in core ruby itself. Request data, Response}
-  spec.homepage      = ""
+  spec.homepage      = "http://kishanio.github.io/CCAvenue-Ruby-Gem/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
