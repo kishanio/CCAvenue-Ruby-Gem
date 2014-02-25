@@ -41,7 +41,7 @@ None
         
         
         # Merchant id needed in view
-        @CCAVENUE_MERCHANT_ID = APP_CONFIG[:ave_merchant_id]
+        @CCAVENUE_MERCHANT_ID = <TODO: MERCHANT ID>
         
         # CCAvenue requires a new order id for each request so if transaction fails we can use #same ones again accross our website.
         order_id =  Time.now.strftime('%d%m%H%L') + <TODO: Order Id>
