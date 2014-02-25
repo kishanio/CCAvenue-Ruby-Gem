@@ -1,4 +1,4 @@
-CCAvenue Payment Gateway Ruby Gem
+CCAvenue integration Ruby.
 ===================================
 
 [CCAvenue Payment Gateway](https://www.ccavenue.com)
@@ -20,7 +20,7 @@ Encryption & Decryption are implemented in core Ruby itself.
 
     gem 'ccavenue'
 
-    # application_controller.rb
+**application_controller.rb**
     
     # Create an instace with merchantid, workingkey and redirect url as parameter
     def ccavenue
@@ -28,21 +28,19 @@ Encryption & Decryption are implemented in core Ruby itself.
     end
 
 
-**orders page to redirect to payment gateway**
+**Orders page (Redirect)**
     
     def send_to_ccavenue
         
-        # process order
         
         # Merchant id needed in view
         @CCAVENUE_MERCHANT_ID = APP_CONFIG[:ave_merchant_id]
         
         # CCAvenue requires a new order id for each request so if transaction fails we can use #same ones again accross our website.
-        
         order_id =  Time.now.strftime('%d%m%H%L') + <TODO: Order Id>
         
         # Parameters:
-        # 
+        #
         #   order_id
         #   price
         #   billing_name
@@ -64,9 +62,11 @@ Encryption & Decryption are implemented in core Ruby itself.
         #   delivery_phone
         #   delivery_notes
         #
+        #
         #   Mandatory - order_id,price,billing_name,billing_address,billing_city,billing_zip,billing_state,billing_country,billing_email,billing_phone
         #   Optional - billing_notes,delivery_name,delivery_address,delivery_city,delivery_zip,delivery_state,delivery_country,delivery_email,delivery_phone,delivery_notes
         
+        # Creating encrypted data
         @encRequest = ccavenue.request(order_id,<TODO: Price>,@order.full_name,"#{@order.address1} ,#{@order.address2}",@order.city,@order.zip,@order.state,@order.country,@order.email,@order.phone)
 
         render "<TODO: Redirect Page>"
@@ -81,7 +81,7 @@ Encryption & Decryption are implemented in core Ruby itself.
     </form>
 
     <script>
-    document.getElementById("redirect").submit();   
+        document.getElementById("redirect").submit();   
     </script>
     
 **payment confirmation page post payment**
@@ -89,13 +89,15 @@ Encryption & Decryption are implemented in core Ruby itself.
     def payment_confirm   # Method post 
     
         # parameter to response is encrypted reponse we get from CCavenue
-        # return parameters are Auth Description: <String: Payment Failed/Success>, Checksum Verification <Bool: True/False>, Data: <HASH/Array: Order_id, amount etc>
+        # Return parameters:
+        #   Auth Description: <String: Payment Failed/Success>
+        #   Checksum Verification <Bool: True/False>
+        #   Response Data: <HASH/Array: Order_id, amount etc>
         
         authDesc,verify,data = ccavenue.response(params['encResponse'])
         
         order_Id = data["Order_Id"][0]
         
-        # post proccessing can be done here like sending email etc.
     end
     
     
