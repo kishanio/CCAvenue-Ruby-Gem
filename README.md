@@ -1,4 +1,4 @@
-CCAvenue integration Ruby.
+CCAvenue Ruby Gem
 ===================================
 
 [CCAvenue Payment Gateway](https://www.ccavenue.com)
