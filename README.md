@@ -14,7 +14,7 @@ Rubygems.org: [https://rubygems.org/gems/ccavenue](https://rubygems.org/gems/cca
 **Usage**
 
 ```bash
-$gem install ccavenue
+$ gem install ccavenue
 ```
 
 **Licence**
