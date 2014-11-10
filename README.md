@@ -5,7 +5,7 @@ CCAvenue Ruby Gem
 
 **Resources:**
 
-[Wiki/Documentation/Usage](http://kishanio.github.io/2014/03/15/ccavenue-ruby-gem.html)
+[Wiki/Documentation/Usage](http://kishanio.svbtle.com/ccavenue-ruby-gem)
 
 **Download**
 
