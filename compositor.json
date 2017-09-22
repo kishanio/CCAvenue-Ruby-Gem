@@ -1,0 +1,90 @@
+{
+  "name": "kishanio/CCAvenue-Ruby-Gem",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "CCAvenue Ruby Gem",
+  "branch": "master",
+  "style": {
+    "name": "Brutalist",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BasicHeader",
+      "article": "article/MarkdownArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Consolas, \"Liberation Mono\", Menlo, Courier, monospace",
+    "heading": {},
+    "typeScale": [
+      48,
+      32,
+      20,
+      18,
+      16,
+      14,
+      12
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "fluid": true
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/kishanio/CCAvenue-Ruby-Gem",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "CCAvenue-Ruby-Gem",
+      "subhead": "CCAvenue Payment Gateway Integration Ruby.",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "CCAvenue-Ruby-Gem: CCAvenue Payment Gateway Integration Ruby.",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "kishanio",
+          "repo": "CCAvenue-Ruby-Gem"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p><a href=\"https://www.ccavenue.com\">CCAvenue Payment Gateway</a></p>\n<p><strong>Resources:</strong></p>\n<p><a href=\"http://kishanio.svbtle.com/ccavenue-ruby-gem\">Wiki/Documentation/Usage</a></p>\n<p><strong>Download</strong></p>\n<p>Rubygems.org: <a href=\"https://rubygems.org/gems/ccavenue\">https://rubygems.org/gems/ccavenue</a></p>\n<p><strong>Usage</strong></p>\n<pre>$ gem install ccavenue</pre><p><strong>Licence</strong></p>\n<p>It&apos;s Licenced under <a href=\"https://raw.github.com/kishanio/CCAvenue-Ruby-Gem/master/LICENSE.txt\">MIT</a></p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/kishanio/CCAvenue-Ruby-Gem",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/kishanio",
+          "text": "kishanio"
+        }
+      ]
+    }
+  ]
+}
